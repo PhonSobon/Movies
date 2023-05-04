@@ -1,11 +1,12 @@
-import Navbarcomponents from '@/components/Navbarcomponents'
+import AboutComponents from '@/components/AboutComponents'
 import React from 'react'
 
 export default function about() {
   return (
-    <div>
-        <Navbarcomponents/>
-        <h1>About Page</h1>
+    <div className='m-5 text-white'>
+        <div className='m-5'>
+        <AboutComponents/>
+        </div>
     </div>
   )
 }

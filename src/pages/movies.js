@@ -9,9 +9,9 @@ export default function Home({ movies }) {
   console.log(data);
   return (
     <>
+      <h1 className="m-5">Movie</h1>
       <div className="container">
-        <Araticlecomponents/>
-        <h1 className=" text-center text-white p-lg-3">Movie</h1>
+        <h1 className=" text-center text-white">Movie</h1>
         <div className="d-flex justify-content-evenly flex-wrap ">
           {data.length > 0 && data.map((movies) => <Cardcomponents key =
           {movies.id} imagePath={movies.backdrop_path
@@ -45,3 +45,4 @@ export async function getServerSideProps(context) {
     },
   };
 }
+

@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbarcomponents from './Navbarcomponents'
+import Foootercomponents from './Foootercomponents'
 
 export default function Layout({children}) {
   return (
-    <div>
+    <div className='bg-dark'>
         <Navbarcomponents/>
-        <main>
+        <main className='bg-dark'>
             {children}
         </main>
+        <Foootercomponents/>
     </div>
   )
 }

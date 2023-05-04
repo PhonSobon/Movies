@@ -41,7 +41,7 @@ export default function Movie() {
 		<div className="container">
 			<div className="container text-center">
 				<div className="row">
-					<div className="col-3">
+					<div className="col-4">
 						<Card>
 							<Card.Img
 								variant="top"
@@ -52,18 +52,24 @@ export default function Movie() {
 								}
 							/>
 							<Card.Body>
-								
+							
 							</Card.Body>
 						</Card>
 					</div>
-					<div className="col-9">
-						<div>
-							<p>{movie.overview ? movie.overview : 'Unknow'}</p>
-							<Button
-							variant="primary"
-							onClick={handleShow}>
-							View detail
-							</Button>
+					<div className="col-8 ">
+						<div className=' m-5'>
+							<Card>
+								<Card.Body>
+									<Card.Title>{movie.title ? movie.title : 'Unknow'}</Card.Title>
+								</Card.Body>
+								<p>{movie.overview ? movie.overview : 'Unknow'}</p>
+							</Card>
+								<Button
+									variant="primary"
+									onClick={handleShow}>
+									Watch
+								</Button>
+							
 						</div>
 						<div>
               <Modal show={show} onHide={handleClose} size="lg">
